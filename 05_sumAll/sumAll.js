@@ -2,6 +2,9 @@ function addNums(priorSum, currentNumber) {
     return priorSum + currentNumber;
 }
 
+// Checks for whether the bounds are integers and whether they are >= 0 before continuing.
+// Adds all numbers between (and including) both bounds to an array,
+// then reduces the array by calling addNums() to return the total sum.
 const sumAll = function(bound1, bound2) {
     if(!Number.isInteger(bound1) || !Number.isInteger(bound2)) {
         return "ERROR";
